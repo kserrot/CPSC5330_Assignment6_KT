@@ -13,6 +13,8 @@
 		F5C86B4D2B812F7300C88446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C86B4B2B812F7300C88446 /* Main.storyboard */; };
 		F5C86B4F2B812F7400C88446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C86B4E2B812F7400C88446 /* Assets.xcassets */; };
 		F5C86B522B812F7400C88446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C86B502B812F7400C88446 /* LaunchScreen.storyboard */; };
+		F5C86B5D2B814B3E00C88446 /* ConvertLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C86B5C2B814B3E00C88446 /* ConvertLogic.swift */; };
+		F5C86B622B81517A00C88446 /* ConvertAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C86B612B81517A00C88446 /* ConvertAmountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F5C86B4E2B812F7400C88446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C86B512B812F7400C88446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5C86B532B812F7400C88446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C86B5C2B814B3E00C88446 /* ConvertLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertLogic.swift; sourceTree = "<group>"; };
+		F5C86B612B81517A00C88446 /* ConvertAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertAmountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				F5C86B452B812F7300C88446 /* AppDelegate.swift */,
 				F5C86B472B812F7300C88446 /* SceneDelegate.swift */,
+				F5C86B5C2B814B3E00C88446 /* ConvertLogic.swift */,
 				F5C86B492B812F7300C88446 /* ViewController.swift */,
+				F5C86B612B81517A00C88446 /* ConvertAmountView.swift */,
 				F5C86B4B2B812F7300C88446 /* Main.storyboard */,
 				F5C86B4E2B812F7400C88446 /* Assets.xcassets */,
 				F5C86B502B812F7400C88446 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C86B5D2B814B3E00C88446 /* ConvertLogic.swift in Sources */,
+				F5C86B622B81517A00C88446 /* ConvertAmountView.swift in Sources */,
 				F5C86B4A2B812F7300C88446 /* ViewController.swift in Sources */,
 				F5C86B462B812F7300C88446 /* AppDelegate.swift in Sources */,
 				F5C86B482B812F7300C88446 /* SceneDelegate.swift in Sources */,
