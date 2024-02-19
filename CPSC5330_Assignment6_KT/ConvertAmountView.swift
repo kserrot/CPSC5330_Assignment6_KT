@@ -11,6 +11,7 @@ class ConvertAmountView: UIViewController {
     
     var convertLogic: ConvertLogic!
 
+    
     @IBOutlet weak var amountInUSDLabel: UILabel!
     @IBOutlet weak var euroLabel: UILabel!
     @IBOutlet weak var yenLabel: UILabel!
@@ -29,9 +30,17 @@ class ConvertAmountView: UIViewController {
         super.viewDidLoad()
         
         amountInUSDLabel.text = "Amount in USD: \(amount)"
+        
+        //print("Euro Amount: \(String(describing: convertLogic.euroAmount))")
         updateConversionLabel(euroConvert, currencyLabel: euroLabel, withAmount: convertLogic.euroAmount, symbol: "€")
+        
+        //print("Yen Amount: \(String(describing: convertLogic.yenAmount))")
         updateConversionLabel(yenConvert, currencyLabel: yenLabel, withAmount: convertLogic.yenAmount, symbol: "¥")
+        
+       //print("Pesos Amount: \(String(describing: convertLogic.pesosAmount))")
         updateConversionLabel(pesosConvert, currencyLabel: pesosLabel, withAmount: convertLogic.pesosAmount, symbol: "$")
+          
+        //print("Ruble Amount: \(String(describing: convertLogic.rubleAmount))")
         updateConversionLabel(rubleConvert, currencyLabel: rubleLabel, withAmount: convertLogic.rubleAmount, symbol: "₽")
     }
             

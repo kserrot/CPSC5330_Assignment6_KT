@@ -165,7 +165,7 @@
                         <outlet property="rubleSwitch" destination="Gvh-9S-gw4" id="wTT-ZP-Cw9"/>
                         <outlet property="usdValue" destination="oqq-LA-o8m" id="kNb-5n-f44"/>
                         <outlet property="yenSwitch" destination="sWk-gu-HnS" id="UzJ-KP-YFU"/>
-                        <segue destination="v2V-gU-wth" kind="presentation" identifier="toConvertAmount" id="gaV-Yd-3Du"/>
+                        <segue destination="v2V-gU-wth" kind="presentation" identifier="toConvertAmount" modalPresentationStyle="fullScreen" id="gaV-Yd-3Du"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -177,11 +177,11 @@
             <objects>
                 <viewController id="v2V-gU-wth" customClass="ConvertAmountView" customModule="CPSC5330_Assignment6_KT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOY-lk-Zuo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VuE-7W-iM2">
-                                <rect key="frame" x="9.6666666666666572" y="490" width="353.33333333333337" height="322"/>
+                                <rect key="frame" x="9.6666666666666572" y="500" width="353.33333333333337" height="322"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-Vp-ljZ">
                                         <rect key="frame" x="116.33333333333331" y="0.0" width="121" height="20.333333333333332"/>
@@ -297,15 +297,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="amountInUSDLabel" destination="xMH-Te-QTE" id="5hA-8a-byt"/>
+                        <outlet property="amountInUSDLabel" destination="xMH-Te-QTE" id="olo-d9-aQG"/>
                         <outlet property="euroConvert" destination="Kdg-JB-U2G" id="g4Z-QD-qPH"/>
-                        <outlet property="euroLabel" destination="Kdg-JB-U2G" id="h30-17-TMX"/>
+                        <outlet property="euroLabel" destination="CAx-5d-6RZ" id="57V-2f-XVQ"/>
                         <outlet property="pesosConvert" destination="ocF-be-Ul6" id="qJC-q4-jMr"/>
-                        <outlet property="pesosLabel" destination="ocF-be-Ul6" id="g3Q-oc-geW"/>
+                        <outlet property="pesosLabel" destination="Qon-yV-ZPH" id="hAa-3b-abl"/>
                         <outlet property="rubleConvert" destination="gYZ-OZ-LFW" id="6Ig-8z-bTV"/>
                         <outlet property="rubleLabel" destination="Uhq-OD-rTD" id="7W3-7h-7gU"/>
                         <outlet property="yenConvert" destination="LSI-Vj-ckS" id="I63-Ud-YmH"/>
-                        <outlet property="yenLabel" destination="LSI-Vj-ckS" id="qQ7-de-lIh"/>
+                        <outlet property="yenLabel" destination="GGD-ee-Ra8" id="ppI-Pz-vq2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwO-aF-HiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
