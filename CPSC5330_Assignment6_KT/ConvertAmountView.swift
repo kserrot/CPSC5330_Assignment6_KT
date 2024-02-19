@@ -17,26 +17,37 @@ class ConvertAmountView: UIViewController {
     @IBOutlet weak var pesosLabel: UILabel!
     @IBOutlet weak var rubleLabel: UILabel!
     
-    var amount : String = ""
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        amountInUSDLabel.text = "Amount in USD: \(amount)"
-        euroConvert.text = convertLogic.euroAmount != nil ? "€ \(convertLogic.euroAmount!)" : "Conversion not selected"
-        yenConvert.text = convertLogic.yenAmount != nil ? "¥ \(convertLogic.yenAmount!)" : "Conversion not selected"
-        pesosConvert.text = convertLogic.pesosAmount != nil ? "$ \(convertLogic.pesosAmount!)" : "Conversion not selected"
-        rubleConvert.text = convertLogic.rubleAmount != nil ? "₽ \(convertLogic.rubleAmount!)" : "Conversion not selected"
-        }
-    
     @IBOutlet weak var euroConvert: UILabel!
     @IBOutlet weak var yenConvert: UILabel!
     @IBOutlet weak var pesosConvert: UILabel!
     @IBOutlet weak var rubleConvert: UILabel!
     
     
+    var amount : String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        amountInUSDLabel.text = "Amount in USD: \(amount)"
+        updateConversionLabel(euroConvert, currencyLabel: euroLabel, withAmount: convertLogic.euroAmount, symbol: "€")
+        updateConversionLabel(yenConvert, currencyLabel: yenLabel, withAmount: convertLogic.yenAmount, symbol: "¥")
+        updateConversionLabel(pesosConvert, currencyLabel: pesosLabel, withAmount: convertLogic.pesosAmount, symbol: "$")
+        updateConversionLabel(rubleConvert, currencyLabel: rubleLabel, withAmount: convertLogic.rubleAmount, symbol: "₽")
+    }
+            
+    func updateConversionLabel(_ label: UILabel, currencyLabel: UILabel, withAmount amount: Double?, symbol: String) {
+        if let amount = amount {
+            label.text = "\(symbol) \(amount)"
+            label.isHidden = false
+            currencyLabel.isHidden = false
+        } else {
+            label.isHidden = true
+            currencyLabel.isHidden = true
+        }
+    }
+    
     @IBAction func backPressed(_ sender: UIButton) {
         dismiss(animated: true)
     }
-
+    
 }

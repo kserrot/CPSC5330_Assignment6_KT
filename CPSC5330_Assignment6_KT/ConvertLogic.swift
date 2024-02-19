@@ -41,22 +41,22 @@ struct ConvertLogic {
         
     mutating func convertCurrencyAmount(amount: Int, completion: (Bool) -> Void) {
         if euroSwitch {
-            euroAmount = Double(amount) * euroRate
+            euroAmount = round(Double(amount) * euroRate * 100) / 100
         } else {
             euroAmount = nil
         }
         if yenSwitch {
-            yenAmount = Double(amount) * yenRate
+            yenAmount = round(Double(amount) * yenRate * 100) / 100
         } else {
             yenAmount = nil
         }
         if pesosSwitch {
-            pesosAmount = Double(amount) * pesosRate
+            pesosAmount = round(Double(amount) * pesosRate * 100) / 100
         } else {
             pesosAmount = nil
         }
         if rubleSwitch {
-            rubleAmount = Double(amount) * rubleRate
+            rubleAmount = round(Double(amount) * rubleRate * 100) / 100
         } else {
             rubleAmount = nil
         }
